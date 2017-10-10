@@ -1,0 +1,136 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(./images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  height: 30rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+ul {
+  margin-right: 1rem;
+}
+
+ul li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mainBanner {
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  background-color: white;
+  padding: 1.5rem 5rem;
+}
+
+.mainBanner h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 8rem;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.exams img {
+  width: 3.5rem;
+}
+
+.fittings img {
+  width: 5rem;
+}
+
+.delivery img {
+  width: 5rem;
+}
+
+.supporting {
+  display: flex;
+  justify-content: center;
+}
+
+.info-block {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.info-block h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+}
+
+.info-block p {
+  margin-top: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
