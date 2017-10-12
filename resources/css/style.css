@@ -7,11 +7,6 @@ body {
   line-height: 1.4rem;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 header {
   background-image: url(./images/glasses-bg.png);
   background-repeat: no-repeat;
@@ -19,6 +14,7 @@ header {
   background-size: cover;
   display: block;
   height: 30rem;
+  padding-top: 1rem;
 }
 
 nav {
@@ -28,7 +24,11 @@ nav {
   background-color: cadetblue;
   color: white;
   padding: 1rem 0;
-  margin-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 nav div {
@@ -49,6 +49,10 @@ ul {
 ul li {
   display: inline;
   padding: 0 1rem;
+}
+
+.truncatedMenu {
+  display: none;
 }
 
 .flex {
@@ -133,4 +137,81 @@ footer {
 footer img {
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 980px) {
+  .container {
+    max-width: 100%;
+  }
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+  .mainBanner {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .menu ul {
+    display: none;
+  }
+  .menu ul.truncatedMenu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+  .logo span {
+    display: none;
+  }
+  .mainBanner {
+    width: 100%;
+    padding: 1rem;
+    margin: 9rem auto 0;
+  }
+  .mainBanner h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+  }
+  .feature {
+    margin-bottom: 1.54rem;
+    height: 6rem;
+  }
+  .feature span {
+    font-size: 0.77rem;
+  }
+  .supporting {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-block {
+    width: 95%;
+    margin-top: 3.77rem;
+    margin-bottom: 2rem;
+  }
+  .info-block h4 {
+    width: 100%;
+  }
+  .info-block p {
+    font-size: 0.77rem;
+    margin-left: 1rem;
+  }
+  footer span {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+  }
 }
